@@ -18,13 +18,3 @@ Route::get('/', function () {
 });
 
 Route::get('/produtos/novo', [ProdutosController::class, 'create']);
-
-// Route::get('products', ['ProductController@index']);
-
-//Route::get('products', [ProductController::class, 'index']);
-
-/*
-Route::get('/produtos/novo', function () {
-    return view('produtos.create');
-  });
-*/
