@@ -7,7 +7,8 @@
     <title>Cadastro de produto</title>
 </head>
 <body>
-    <form action="">
+    <form method="POST" action="{{ route('registrar_produto') }}">
+        @csrf <!-- blade invoca componente, escreve código PHP com a @ e gera token único e temporário para envio do form para o laravel -->
         <label for="">Nome</label><br />
         <input type="text" name="nome"><br />
 
